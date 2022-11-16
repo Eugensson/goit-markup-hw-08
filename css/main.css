@@ -405,8 +405,9 @@ image {
 .header {
   border-bottom: 1px solid var(--border-bottom-header-color);
 }
+
 @media screen and (min-width: 768px) {
-  .header {
+  .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
