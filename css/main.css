@@ -580,6 +580,16 @@ image {
   text-transform: uppercase;
   color: var(--white-text-color);
 }
+@media screen and (max-width: 339px) {
+  .hero__title {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__title {
     width: 700px;
