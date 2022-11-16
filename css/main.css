@@ -128,8 +128,8 @@ image {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   padding: 48px 40px;
   background-color: #ffffff;
   z-index: 999;
@@ -188,12 +188,6 @@ image {
 
 .menu-nav {
   display: block;
-  margin-bottom: 48px;
-}
-@media screen and (max-width: 479px) {
-  .menu-nav {
-    width: 100%;
-  }
 }
 
 .menu-nav__item:not(:last-child) {
@@ -217,17 +211,13 @@ image {
     width: 480px;
   }
 }
-@media screen and (max-width: 479px) {
-  .menu-contacts {
-    width: 100%;
-  }
+
+.menu-auth__list {
+  margin-bottom: 64px;
 }
 
-.menu-auth__item {
+.menu-auth__item:not(:last-child) {
   margin-bottom: 32px;
-}
-.menu-auth__item:last-child {
-  margin-bottom: 64px;
 }
 
 .menu-auth__link {
@@ -241,6 +231,11 @@ image {
 .menu-auth__link:hover, .menu-auth__link:focus {
   color: var(--accent-text-color);
 }
+@media screen and (max-width: 400px) {
+  .menu-auth__link {
+    font-size: 24px;
+  }
+}
 
 .menu-auth__link--mail {
   font-size: 24px;
@@ -250,6 +245,9 @@ image {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 20px;
 }
 
@@ -263,6 +261,11 @@ image {
   letter-spacing: 0.02em;
   color: var(--accent-text-color);
 }
+@media screen and (max-width: 400px) {
+  .menu-social__link {
+    font-size: 12px;
+  }
+}
 
 .menu-social__line::after {
   position: absolute;
@@ -270,6 +273,11 @@ image {
   content: "";
   border: 1px solid rgba(33, 33, 33, 0.2);
   height: 22px;
+}
+@media screen and (max-width: 400px) {
+  .menu-social__line::after {
+    height: 14px;
+  }
 }
 
 .button {
@@ -584,7 +592,6 @@ image {
   padding: 118px 0px;
   width: 100%;
   max-width: 480px;
-  height: 400px;
   text-align: center;
   background-size: cover;
   background-position: center;
@@ -1027,11 +1034,17 @@ image {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 100%;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
   margin-bottom: 40px;
   gap: 8px;
+}
+@media screen and (min-width: 468px) and (max-width: 767px) {
+  .filter {
+    width: 326px;
+  }
 }
 @media screen and (min-width: 768px) {
   .filter {
@@ -1083,7 +1096,6 @@ image {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100%;
   -webkit-transition: -webkit-box-shadow 250ms var(--timing-function);
   transition: -webkit-box-shadow 250ms var(--timing-function);
   transition: box-shadow 250ms var(--timing-function);
@@ -1142,11 +1154,14 @@ image {
 }
 
 .projects__image {
+  display: block;
   width: 100%;
   height: auto;
 }
 
 .projects__overlay {
+  width: 100%;
+  height: 100%;
   position: absolute;
   padding: 77px 24px;
   top: 0%;
@@ -1407,6 +1422,12 @@ image {
   .modal {
     width: 528px;
     height: 581px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .modal {
+    width: 100%;
+    height: 100%;
   }
 }
 
