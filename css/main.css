@@ -1175,7 +1175,7 @@ image {
   width: 100%;
   height: 100%;
   position: absolute;
-  padding: 77px 24px;
+  padding: 24px;
   top: 0%;
   font-size: 18px;
   line-height: 1.56;
@@ -1192,13 +1192,36 @@ image {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
 }
+@media screen and (min-width: 320px) and (max-width: 359px) {
+  .projects__overlay {
+    padding: 24px;
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 360px) and (max-width: 439px) {
+  .projects__overlay {
+    padding: 40px 24px;
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 440px) and (max-width: 479px) {
+  .projects__overlay {
+    padding: 60px 24px;
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .projects__overlay {
+    padding: 77px 24px;
+  }
+}
 @media screen and (min-width: 768px) {
-  .projects__overlay .projects__overlay {
+  .projects__overlay {
     padding: 49px 24px 77px 24px;
   }
 }
 @media screen and (min-width: 768px) {
-  .projects__overlay .projects__overlay {
+  .projects__overlay {
     padding: 63px 24px;
   }
 }
