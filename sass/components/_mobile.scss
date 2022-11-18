@@ -42,7 +42,7 @@
     fill: var(--accent-text-color);
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet) {
     display: none;
   }
 }
@@ -87,7 +87,7 @@
 }
 
 .menu-contacts {
-  @media screen and (min-width: 480px) and (max-width: 767px) {
+  @media screen and (min-width: $mobil) and (max-width: 767px) {
     width: 480px;
   }
 }

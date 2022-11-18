@@ -3,7 +3,7 @@
   // min-width: 480px;
   background-color: var(--secondary-background-color);
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding: 94px 0;
   }
 }
@@ -17,7 +17,7 @@
   line-height: 1.17;
   text-align: center;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
     font-size: 36px;
   }
@@ -28,7 +28,7 @@
     display: block;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
@@ -47,11 +47,11 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: calc((100% - 30px) / 2);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: calc((100% - 90px) / 4);
   }
 }
@@ -59,7 +59,7 @@
 .team__item {
   padding: 30px 30px 24px 30px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding: 30px;
   }
 }

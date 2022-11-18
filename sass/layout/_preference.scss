@@ -5,7 +5,7 @@
   //   width: 100%;
   // }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding: 94px 0;
   }
 }
@@ -13,7 +13,7 @@
 .preference__list {
   display: block;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -29,11 +29,11 @@
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: calc((100% - 30px) / 2);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: calc((100% - 90px) / 4);
   }
 }
@@ -60,7 +60,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     text-align: left;
   }
 }

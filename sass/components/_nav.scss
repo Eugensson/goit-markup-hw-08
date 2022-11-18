@@ -14,7 +14,7 @@
   @media screen and (min-width: 768px) {
     margin-left: 87px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-left: 93px;
   }
 }
@@ -37,7 +37,7 @@
     }
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     .auth__list &:not(:last-child) {
       margin-right: 50px;
     }
@@ -49,13 +49,13 @@
     display: none;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: $tablet) and (max-width: 1199px) {
     display: block;
     padding: 21px 0;
     margin-left: auto;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-left: auto;
   }
 }
@@ -124,7 +124,7 @@
     color: var(--accent-text-color);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     padding: 32px 0;
   }

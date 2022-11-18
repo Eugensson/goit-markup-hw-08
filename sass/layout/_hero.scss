@@ -20,11 +20,11 @@
     font-size: 24px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 360px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 700px;
 
     font-size: 44px;
@@ -58,9 +58,9 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $tablet) {
   .hero {
-    max-width: 768px;
+    max-width: $tablet;
     background-image: var(--gradient), url(../images/hero-tablet.jpg);
   }
 
@@ -71,7 +71,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop) {
   .hero {
     padding: 200px 0;
     max-width: 1600px;

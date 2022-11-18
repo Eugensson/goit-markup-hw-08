@@ -1,7 +1,7 @@
 .clients {
   padding: 60px 0;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding: 94px 0;
   }
 }
@@ -15,7 +15,7 @@
   line-height: 1.17;
   text-align: center;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 50px;
     font-size: 36px;
   }
@@ -32,11 +32,11 @@
   height: 92px;
   width: calc((100% - 30px) / 2);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: calc((100% - 60px) / 3);
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: calc((100% - 150px) / 6);
   }
 }

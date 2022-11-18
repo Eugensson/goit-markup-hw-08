@@ -1,7 +1,7 @@
 .portfolio {
   padding: 60px 0;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     padding: 94px 0;
   }
 }
@@ -18,7 +18,7 @@
     width: 326px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     justify-content: center;
     margin-bottom: 50px;
   }
@@ -27,7 +27,7 @@
 .projects {
   display: block;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;

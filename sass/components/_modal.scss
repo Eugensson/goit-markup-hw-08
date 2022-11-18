@@ -32,7 +32,7 @@
   box-shadow: var(--card-shadow);
   border-radius: 4px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: 528px;
     height: 581px;
   }
@@ -180,7 +180,7 @@
 
     transition: border-color 250ms var(--timing-function);
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: $desktop) {
       left: 12px;
     }
   }
@@ -202,7 +202,7 @@
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 1.71;
   }
@@ -225,7 +225,7 @@
     opacity: 1;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     left: 12px;
   }
 }
