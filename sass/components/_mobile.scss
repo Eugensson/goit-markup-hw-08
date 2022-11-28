@@ -37,6 +37,8 @@
   /* border-radius: 50%; */
   outline: none;
 
+  transition: fill 250ms var(--timing-function);
+
   &:hover,
   &:focus {
     fill: var(--accent-text-color);
@@ -54,6 +56,8 @@
 
   border: 0;
   background-color: transparent;
+
+  transition: fill 250ms var(--timing-function);
 
   &:hover,
   &:focus {
@@ -84,6 +88,10 @@
   &:focus {
     color: var(--accent-text-color);
   }
+}
+
+.menu-nav__link--current {
+  color: var(--accent-text-color);
 }
 
 .menu-contacts {

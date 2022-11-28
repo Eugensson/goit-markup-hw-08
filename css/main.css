@@ -165,6 +165,8 @@ image {
   border: 0;
   /* border-radius: 50%; */
   outline: none;
+  -webkit-transition: fill 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function);
 }
 .menu__button--open:hover, .menu__button--open:focus {
   fill: var(--accent-text-color);
@@ -181,6 +183,8 @@ image {
   right: 15px;
   border: 0;
   background-color: transparent;
+  -webkit-transition: fill 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function);
 }
 .menu__button--close:hover, .menu__button--close:focus {
   fill: var(--accent-text-color);
@@ -203,6 +207,10 @@ image {
   color: var(--primary-text-color);
 }
 .menu-nav__link:hover, .menu-nav__link:focus {
+  color: var(--accent-text-color);
+}
+
+.menu-nav__link--current {
   color: var(--accent-text-color);
 }
 
@@ -565,7 +573,11 @@ image {
 
 .hero__overlay {
   width: 100%;
-  max-width: 1600px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__overlay {
+    max-width: 1600px;
+  }
 }
 
 .hero__title {
@@ -991,7 +1003,7 @@ image {
 }
 @media screen and (min-width: 768px) {
   .clients__item {
-    width: calc((100% - 30px) / 2);
+    width: calc((100% - 60px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
