@@ -162,74 +162,161 @@
   }
 }
 
-.checkbox__input {
-  appearance: none;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0px;
-    transform: translateY(-50%);
-
-    display: block;
-    width: 16px;
-    height: 15px;
-    border: 2px solid var(--primary-text-color);
-    border-radius: 2px;
-
-    transition: border-color 250ms var(--timing-function);
-
-    @media screen and (min-width: $desktop) {
-      left: 12px;
-    }
-  }
-
-  &:hover::before,
-  &:focus::before {
-    border-color: var(--focus-form-border-color);
-  }
-}
-
-.checkbox__label {
-  position: relative;
-  display: block;
-  text-align: center;
+.check {
   margin-bottom: 30px;
+  text-align: left;
 
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-
-  @media screen and (min-width: $desktop) {
-    font-size: 14px;
-    line-height: 1.71;
+  @media screen and (min-width: 1200px) {
+    text-align: center;
   }
 }
 
-.checkbox__icon {
-  position: absolute;
-  top: 50%;
-  left: 0px;
-  transform: translateY(-50%);
-
-  fill: var(--primary-background-color);
-  border-radius: 2px;
+.check__label {
+  position: relative;
   cursor: pointer;
+}
+
+.check__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  appearance: none;
+}
+
+.check__input::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 0;
+  width: 16px;
+  height: 15px;
+
+  background-color: transparent;
+  border: 2px solid var(--primary-text-color);
+  border-radius: 2px;
+
+  transition: border-color 250ms var(--timing-function);
+}
+
+.check__input:hover::after,
+.check__input:focus::after {
+  border-color: var(--focus-form-border-color);
+}
+
+.check__icon {
+  position: absolute;
+  top: 3px;
+  left: 0;
   opacity: 0;
 
-  transition: opacity 250ms var(--timing-function);
+  transition: border-color 250ms var(--timing-function), opacity 250ms var(--timing-function);
 
-  .checkbox__input:checked + & {
+  .check__input:checked + & {
+    border-color: var(--focus-form-border-color);
     opacity: 1;
   }
+}
 
-  @media screen and (min-width: $desktop) {
-    left: 12px;
+.check__text {
+  margin-left: 24px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  color: #757575;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 
-.checkbox__link {
-  color: var(--accent-text-color);
+.check__link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
+
+// .checkbox__input {
+//   appearance: none;
+
+//   &::before {
+//     content: '';
+//     position: absolute;
+//     top: 50%;
+//     left: 0px;
+//     transform: translateY(-50%);
+
+//     display: block;
+//     width: 16px;
+//     height: 15px;
+//     border: 2px solid var(--primary-text-color);
+//     border-radius: 2px;
+
+//     transition: border-color 250ms var(--timing-function);
+
+//     @media screen and (min-width: $desktop) {
+//       left: 12px;
+//     }
+//   }
+
+//   &:hover::before,
+//   &:focus::before {
+//     border-color: var(--focus-form-border-color);
+//   }
+// }
+
+// .checkbox__label {
+//   position: relative;
+//   display: block;
+//   text-align: center;
+//   margin-bottom: 30px;
+
+//   font-size: 12px;
+//   line-height: 1.17;
+//   letter-spacing: 0.03em;
+//   color: var(--secondary-text-color);
+
+//   @media screen and (min-width: $desktop) {
+//     font-size: 14px;
+//     line-height: 1.71;
+//   }
+// }
+
+// .checkbox__icon {
+//   position: absolute;
+//   top: 50%;
+//   left: 0px;
+//   transform: translateY(-50%);
+
+//   fill: var(--primary-background-color);
+//   border-radius: 2px;
+//   cursor: pointer;
+//   opacity: 0;
+
+//   transition: opacity 250ms var(--timing-function);
+
+//   .checkbox__input:checked + & {
+//     opacity: 1;
+//   }
+
+//   @media screen and (min-width: $desktop) {
+//     left: 12px;
+//   }
+// }
+
+// .checkbox__link {
+//   color: var(--accent-text-color);
+// }
